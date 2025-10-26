@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>T-SPEED COMPANY</title>
+    <link rel="stylesheet" href="../CSS/style2.css" />
+    <script src="../JS/jquery-3.7.2.min.js"></script>
+    <script src="../JS/main1.js"></script>
+  </head>
+  <body>
+    <h2>T-SPEED COMPANY</h2>
+    <div class="banner">
+      <img src="../Images/banner_car.jpg" alt="T-Speed Company" />
+    </div>
+
+    <table border="1" width="100%" cellpadding="5">
+      <tr>
+        <!-- Bảng tin thị trường -->
+        <td valign="top" width="30%">
+          <h3 style="color: aqua;">Bảng tin thị trường</h3>
+          <table border="1" width="100%">
+            <tr>
+              <th colspan="2" style="color: blue;">Vàng</th>
+            </tr>
+            <tr>
+              <td id="vangMua" style="color: blue;">Mua vao</td>
+              <td id="vangBan" style="color: blue;">Ban ra</td>
+            </tr>
+            <tr>
+              <th colspan="2" style="color: blue;">USD</th>
+            </tr>
+            <tr>
+              <td id="usdMua" style="color: blue;">Mua vao</td>
+              <td id="usdBan" style="color: blue;">Ban ra</td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- Form cập nhật -->
+        <td valign="top" width="40%">
+          <h3 style="color: aqua;">Cập nhật giá cả thị trường</h3>
+          <form>
+            <label>Mua vào:</label><br />
+            <input type="text" id="muaVao" /><br /><br />
+
+            <label>Bán ra:</label><br />
+            <input type="text" id="banRa" /><br /><br />
+
+            <label>Loại xe:</label><br />
+            <select id="loaiXe">
+              <option value="../Images/car1.jpg;35000">Toyota</option>
+              <option value="../Images/car2.jpg;15000">KIA</option>
+              <option value="../Images/car3.jpg;40000">Ford</option>
+              <option value="../Images/car4.jpg;32000">Civic</option>
+              <option value="../Images/car5.jpg;50000">Ferrari</option>
+              <option value="../Images/car7.jpg;45000">Mercedes</option></select
+            ><br /><br />
+
+            <label>Cập nhật cho:</label><br />
+            <input type="radio" name="capnhat" id="vang" value="1" /> Vàng
+            <input type="radio" name="capnhat" id="usd" value="0" /> USD
+            <br /><br />
+
+            <button type="button" id="updateBtn">Update</button>
+            <button type="button" id="stateBtn">State</button>
+          </form>
+        </td>
+
+        <!-- Bảng báo giá -->
+        <td valign="top" width="30%">
+          <h3 style="color: aqua;">Bảng báo giá</h3>
+          <div id="info" style="color: blue;">
+            <p>- Với kiểu dáng thể thao, sang trọng</p>
+            <p>- Nổi bật, ít tốn nhiên liệu</p>
+            <p>- Kiểu dáng thể thao</p>
+          </div>
+          <div id="display">
+            <img id="carImg" src="../Images/car1.jpg" width="200" /><br />
+            <span id="price"></span>
+          </div>
+          <div id="gia" style="color: green;">
+            <table>
+                <p>Gia: 35000 USD</p>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="../CSS/style3.css">
+    <script src="../JS/script3.js"></script>
+</head>
+<body>
+    <form id="registerForm" onsubmit="return validateForm()">
+        <table>
+            <tr><th colspan="2">Register Form</th></tr>
+            <tr>
+                <td>Họ và tên (*):</td>
+                <td><input type="text" id="fullname"></td>
+            </tr>
+            <tr>
+                <td>Tên Đăng nhập (*):</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu (*):</td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>Xác nhận mật khẩu (*):</td>
+                <td><input type="password" id="confirm"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td>
+                    <select id="day">
+                        <script>
+                            for (let i = 1; i <= 31; i++)
+                                document.write(`<option>${i}</option>`);
+                        </script>
+                    </select>
+                    Tháng:
+                    <select id="month">
+                        <script>
+                            for (let i = 1; i <= 12; i++)
+                                document.write(`<option>${i}</option>`);
+                        </script>
+                    </select>
+                    Năm:
+                    <input type="text" id="year" size="4" value="2000">
+                </td>
+            </tr>
+            <tr>
+                <td>Điện thoại:</td>
+                <td><input type="text" id="phone"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><input type="text" id="address"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Sở thích:</td>
+                <td>
+                    <select id="hobby">
+                        <option>Ca Nhạc</option>
+                        <option>Thể Thao</option>
+                        <option>Du Lịch</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Đăng Ký">
+                    <input type="reset" value="Hủy">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

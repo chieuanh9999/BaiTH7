@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    width: 180px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.item p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}

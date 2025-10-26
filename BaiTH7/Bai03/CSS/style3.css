@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5fdf5;
+}
+
+table {
+    border: 1px solid #90c695;
+    background-color: #d9f0d9;
+    margin: 40px auto;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+th {
+    text-align: center;
+    font-size: 20px;
+    background-color: #a7d7a7;
+    padding: 8px;
+}
+
+td {
+    padding: 6px;
+}
+
+input, select {
+    width: 90%;
+    padding: 4px;
+}
